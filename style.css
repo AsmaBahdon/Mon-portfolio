@@ -110,7 +110,7 @@ section {
 }
 
 .a-propos-section h2 {
-  color: black; /* Couleur turquoise */
+  color: black; 
   font-size: 2em;
   margin-bottom: 30px;
 }
@@ -137,13 +137,13 @@ section {
 }
 
 .a-propos-text .highlight {
-  color: red; /* Couleur turquoise */
+  color: red; 
   font-weight: bold;
 }
 
 .download-btn {
   display: inline-block;
-  background-color: red; /* Couleur turquoise */
+  background-color: red; 
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -167,7 +167,7 @@ section {
   width: 100%;
   height: auto;
   border-radius: 50%;
-  border: 5px solid red; /* Bordure turquoise */
+  border: 5px solid red; 
 }
 
 
@@ -215,7 +215,7 @@ color: black;}
 }
 
 .progress {
-  background-color:red; /* Couleur turquoise */
+  background-color:red; 
   height: 100%;
   border-radius: 5px;
 }
@@ -226,12 +226,13 @@ color: black;}
 #projets {
   padding: 40px 20px;
   text-align: center;
-  background-color: gray; /* Couleur de fond */
+  background-color: gray; 
 }
 
 #projets h2 {
   font-size: 2em;
-  color: black; /* Couleur turquoise */
+  color: black; 
+
   margin-bottom: 30px;
   margin-left: 50;
 }
