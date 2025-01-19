@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">AHMED BAHDON <span>Asma</span></div>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil">
+    <div class="hero">
+      <h1>Je suis <span>Asma</span>,</h1>
+      <p>Ingenieure pedagogique et Développeuse en devenir passionnée par le web et le design !</p>
+      <a href="#projets" class="btn">Voir mes projets</a>
+    </div>
+    <img src="illustration.JPEG" alt="Illustration" class="illustration">
+  </section>
+
+  <section id="a-propos">
+    <h2>À propos</h2>
+    <div class="a-propos-container">
+      <div class="a-propos-text">
+        <p>
+          Je m'appelle <span class="highlight">Asma</span>, passionnée par la création de sites web modernes et interactifs.</p>
+        <p>
+          Je suis actuellement étudiante en <span class="highlight">développement web</span>, et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.
+        </p>
+        <p>
+          J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.
+        </p>
+        <a href="cv.pdf" class="download-btn" download>Télécharger mon CV</a>
+      </div>
+      <div class="a-propos-image">
+        <img src="profile.jpg" alt="Photo de profil">
+      </div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <h2>Mes Compétences</h2>
+    <div class="skills-container">
+      <div class="skills-group">
+        <h3>Soft Skills</h3>
+        <div class="skill">
+          <span>Gestion de projet</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Résolution de problème</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Adaptabilité</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Hard Skills</h3>
+        <div class="skill">
+          <span>Langage de programmation ( HTML, CSS, JavaScript)</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 30%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Tutorat et accompagnement</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Conception et developpement de modules de formation </span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Analyse des données </span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets">
+    <h2>Mes Projets</h2>
+    <div class="projets-container">
+      <div class="projet-card">
+        <p>Un projet de formation continue en ligne pour les enseignants</p>
+        <a href="projet1.pdf" class="voir-btn">Voir</a>
+      </div>
+      <div class="projet-card">
+        <p>Un projet de recherche sur la relation entre la confiance des enseignants et leur motivation à utiliser les outils numériques</p>
+          <a href="projet2.pdf" class="voir-btn">Voir</a>
+      </div>
+    </div>
+  </section>
+  
+  
+<section id="contact">
+  <h2><span class="highlight">Vous avez un projet en tête ?  N'hésitez pas à me contacter</span></h2>
+  <form class="contact-form" id="contactForm">
+    <div class="form-group">
+      <input type="text" id="prenom" placeholder="Votre prénom" required>
+      <input type="text" id="nom" placeholder="Votre nom" required>
+    </div>
+    <input type="text" id="sujet" placeholder="Votre sujet" required>
+    <textarea id="message" placeholder="Écrivez votre message ici !" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+  <p id="confirmationMessage" style="display: none; color: green; font-weight: bold;">Merci pour votre message, nous vous répondrons bientôt !</p>
+</section>
+
+<script>
+  // Gestion du formulaire
+  const form = document.getElementById('contactForm');
+  const confirmationMessage = document.getElementById('confirmationMessage');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Empêche le rechargement de la page
+
+    // Affiche le message de confirmation
+    confirmationMessage.style.display = 'block';
+
+    // Réinitialise les champs du formulaire
+    form.reset();
+  });
+
+  // Effets interactifs sur les champs
+  const inputs = form.querySelectorAll('input, textarea');
+
+  inputs.forEach(input => {
+    input.addEventListener('focus', function () {
+      this.style.borderColor = 'red'; // Change la bordure en rouge lorsqu'on clique sur le champ
+    });
+
+    input.addEventListener('blur', function () {
+      this.style.borderColor = ''; // Réinitialise la bordure lorsqu'on quitte le champ
+    });
+  });
+</script>
+
+  <footer>
+    <p>Design by Asma</p>
+    <p>Tous droits réservés</p>
+  </footer>
+</body>
+</html>

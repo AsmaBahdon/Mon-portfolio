@@ -1,0 +1,351 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color:gray;
+  padding: 25px 0;
+ 
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color;white;
+  text-align: left-side
+   display: flex;
+  justify-content: space-between;
+}
+
+.logo span {
+  color: red; 
+}
+nav ul li {
+  display: inline;
+  margin:  10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  text-align: left;
+}
+
+
+/* Sections */
+section {
+  height: 70vh; /* Chaque section occupe la hauteur de l'écran */
+  padding: 12px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  text-align: center;
+}
+
+#accueil {
+  background-color: white;
+}
+.hero {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero h1 span {
+  color: red;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px ;
+}
+
+.btn {
+  background-color: red;
+  color: red
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+.illustration {
+  max-width: 30%;
+   margin: 10px;
+}
+
+
+/* Section a-propos */
+#a-propos {
+  background-color: gray;
+}
+.a-propos-section {
+  text-align: center;
+  padding: 50px 20px;
+  color: red; /* Couleur du texte */
+}
+
+.a-propos-section h2 {
+  color: black; /* Couleur turquoise */
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Conteneur principal */
+.a-propos-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  gap: 20px; /* Espace entre les éléments */
+}
+
+/* Texte */
+.a-propos-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.a-propos-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.a-propos-text .highlight {
+  color: red; /* Couleur turquoise */
+  font-weight: bold;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: red; /* Couleur turquoise */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: red; /* Variante plus sombre */
+}
+
+/* Image */
+.a-propos-image {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+.a-propos-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid red; /* Bordure turquoise */
+}
+
+
+#competences {
+  background-color: white;}
+h2 {font-size: 2em;
+color: black;}
+ 
+.skills-container {
+  display: flex;
+  justify-content: space-between; /* Aligne les deux sections côte à côte */
+  gap: 300px; /* Espace entre les groupes */
+  margin-top: 70px; /* Ajoute un espace entre le titre et les groupes */
+}
+
+.skills-group {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 48%; /* Ajuste la largeur pour occuper uniformément l'espace */
+}
+
+.skills-group h3 {
+  margin-bottom: 15px;
+  text-align: center; /* Centre les titres Soft Skills et Hard Skills */
+}
+
+.skill {
+  margin-bottom: 30px;
+}
+
+.skill span {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.progress-bar {
+  background-color: gray;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.progress {
+  background-color:red; /* Couleur turquoise */
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+
+/* Section des projets */
+#projets {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: gray; /* Couleur de fond */
+}
+
+#projets h2 {
+  font-size: 2em;
+  color: black; /* Couleur turquoise */
+  margin-bottom: 30px;
+  margin-left: 50;
+}
+
+/* Conteneur pour aligner les cartes */
+.projets-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Gérer les petits écrans */
+}
+
+/* Style des cartes de projet */
+.projet-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 30%; /* Taille des cartes */
+  min-width: 250px; /* Largeur minimale */
+  margin-top:80px;
+}
+
+.projet-card p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #333; /* Texte noir-gris */
+}
+
+.voir-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.projet-card button:hover {
+  background-color: gray; /* Couleur au survol */
+}
+
+
+#contact {
+  background-color: black;
+  color; white;
+}
+ 
+
+
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align:left;
+}
+
+.highlight {
+  color:white;
+}
+
+.contact-form {
+  max-width: 340px;
+  margin-bottom: 50 ;
+  text-align: center;
+  align:center;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color: white;
+  color: red;
+  font-size: 1em;
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 80px;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color:white;
+  color: red;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: red;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  font-size: 0.9em;}
